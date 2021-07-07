@@ -3,7 +3,7 @@ function myFunction() {
   var max = parseInt(document.getElementById('max').value);
   if(min%1===0 && max%1===0){
     if(max==min) {
-    document.getElementById("result").innerHTML = "Both can't be same.";
+    document.getElementById("result").innerHTML = min;
   }
   else if(max>min) {
     var x = Math.floor(Math.random() * (max - min + 1)) + min;
