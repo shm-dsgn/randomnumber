@@ -1,7 +1,8 @@
 function myFunction() {
   var min = parseInt(document.getElementById('min').value);
   var max = parseInt(document.getElementById('max').value);
-  if(max==min) {
+  if(min%1===0 && max%1===0){
+    if(max==min) {
     document.getElementById("result").innerHTML = "Both can't be same.";
   }
   else if(max>min) {
@@ -10,5 +11,9 @@ function myFunction() {
   } 
   else {
     document.getElementById("result").innerHTML = "Max can't be less than Min.";
+  }
+  }
+  else{
+    document.getElementById("result").innerHTML = "Error";
   }
 }
