@@ -8,12 +8,21 @@
 </head>
 <body>
 	<script  src="script.js"></script>
-	<p>Click the button to display a random number</p>
-	Min: <input type="number" id="min">
-	Max: <input type="number" id="max">
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
+	<div class="card">
+		<h1 class="header" align="center">Random Number Generator</h1>
+		<div align="center" style="font-size: 14px;">Input the range and click on <br>Generate to display a random number</div>
+		<br>
+		<div id="input" align="center" style="font-size: 14px;">
+			Min : <input type="text" id="min">
+			<br><br>
+			Max : <input type="text" id="max">
+		</div>
+		<br>
+		<div align="center">
+			<button onclick="myFunction()" class="button">Generate</button>
+		</div>
+		<br>
+		<p id="result" align="center"></p>
+	</div>
 </body>
 </html>
